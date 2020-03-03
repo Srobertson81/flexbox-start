@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: black;
   height: 100%;
   width: 100%;
 }
@@ -111,20 +111,24 @@ body {
 
 header,
 footer {
+  display: flex;
   background-color: #222;
   height: 80px;
   width: 100%;
+  justify-content: flex-start;
+}
+header {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+main span {
+  font-weight: bolder;
 }
 
 main {
-  background-color: #ccc;
-  height: 250px;
   width: 100%;
-}
-
-header,
-footer,
-main {
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,10 +140,16 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #fff; 
   line-height: 1.5em;
   font-size: 1.25em;
   height: auto;
+}
+#div-2 {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding-left: 35px;
+  padding-right: 35px;  
 }
 
 .wrapper span {
@@ -164,10 +174,21 @@ main {
   color: #fff;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
+  margin-bottom: 50px;
   width: 30%;
   height: 200px;
 }
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul img {
+  padding-right: 15px;
+  padding-left: 0;
+}
+
 
 /* ==========================================================================
    Helper classes
